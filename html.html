@@ -1,0 +1,84 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit on Double Click</title>
+    <style>
+        /* Add some basic styling for the editable element */
+        .editable {
+            border: 1px dashed #ccc;
+            padding: 5px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <p id="editableElement" class="editable">Double-click to edit me.</p>
+
+    <script>
+        const editableElement = document.getElementById('editableElement');
+
+        // Add a double-click event listener to make the element editable
+        editableElement.addEventListener('dblclick', function () {
+            this.contentEditable = true;
+            this.focus();
+        });
+
+        // Add a blur event listener to capture changes and make the element non-editable
+        editableElement.addEventListener('blur', function () {
+            this.contentEditable = false;
+
+            // Get the new content and update the element's text
+            const newText = this.textContent;
+            // You can perform any additional processing or validation here if needed
+            // For this example, we'll just update the text content
+            this.textContent = newText;
+        });
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit and Capture Value</title>
+</head>
+<body>
+    <p id="editableElement" contenteditable="true">Double-click to edit me.</p>
+    <p id="displayValue">Value will be displayed here.</p>
+
+    <script>
+       
+       let dataStorage = {
+  "nom": "updatedValue1",
+  "email": "updatedValue2"
+};
+
+// Push or update data
+dataStorage["newKey1"] = "newValue1"; // Adding a new key-value pair
+dataStorage["newKey2"] = "newValue2"; // Adding another new key-value pair
+dataStorage["email"] = "newUpdatedValue"; // Updating the 'email' key with a new value
+
+console.log(dataStorage)
+       
+    //    const editableElement = document.getElementById('editableElement');
+    //     const displayValueElement = document.getElementById('displayValue');
+
+    //     // Add an "input" event listener to the editable element
+    //     editableElement.addEventListener('input', function () {
+    //         // Get the updated content
+    //         const updatedValue = this.textContent;
+            
+    //         // Display the updated value
+    //         displayValueElement.textContent = 'Updated Value: ' + updatedValue;
+    //     });
+    </script>
+</body>
+</html>
+ 
