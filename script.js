@@ -188,7 +188,8 @@ if (storedImageUrl) {
 
  function downloads(){  
 
-  var contentDiv = document.getElementById("second");
+  var contentDiv = document.getElementById("CvContainer");
+
 //starts here
   
 var resumeOptions = {
@@ -206,11 +207,14 @@ var resumeOptions = {
     marginRight: 0,
     marginTop: 0,
     marginBottom: 0,
+    margin:0,
+    padding:0
+  
   },
 
   // Optional settings for better visual rendering (if using html2canvas)
   html2canvas: {
-    scale: 2, // Increase scale for better resolution (adjust as needed)
+    scale: 3, // Increase scale for better resolution (adjust as needed)
     // Additional html2canvas options can be added here if required
   },
   

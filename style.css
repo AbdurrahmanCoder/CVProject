@@ -5,7 +5,7 @@
 
 main{
     display: flex;
-    background-color: #ebecf0;
+    background-color: #18a311;
   }
 
 
@@ -28,9 +28,10 @@ ul > li{
 }
 .first{
 flex-basis: 28%   ;
-background-color: #ebecf0;
+background-color: #113adb;
 height: 100vh;
 display: flex;
+position: fixed;
 }
 .first > div{
     /* padding: 2%; */
@@ -47,22 +48,28 @@ display: flex;
 
 }
 
-.second{
+/* .second{
+
+
+   position: absolute;
+ left: 30%; */
+/* top :20%; */
+/* transform: translate(-50%,-50%);   */
 
   /* height: 100%; */
-  background-color: red;
+  /* background-color: rgb(252, 17, 17); */
   /* height: 400px;  */
   /* overflow: scroll; */
   
-    flex-basis: 45%;
-    display: flex;
-    background-color: rgb(7, 63, 203); 
-    flex-direction: row; 
+    /* flex-basis: 45%; */
+    /* display: flex; */
+ /* width: 30%; */
+    /* flex-direction: row;  */
   /* height: 1055px; */
   /* height: 1122.24px ;   */
-  height: 1102px ; 
+  /* height: 1102px ;  */
   /* overflow: hidden; */
-  }
+  /* } */
 .second > p{
 width: 20px;
 height: 20px;  
@@ -82,7 +89,7 @@ h4.underlined {
 }
 input[type="text"]
 {
-  padding-left: 20%;
+  /* padding-left: 20%; */
   color: white;
   font-size: 8px;
 }
@@ -91,27 +98,42 @@ label{
   color: #ffff;
 }
 
-.details
+
+
+ 
+#CvContainer
 {
-
-padding-left: 8%;
-background-color: #323b4c;
-width: 35%;
-display: flex;
-flex-direction: column;
-text-align: left;
-}
-.details > div{
-  /* padding-top: 10%; */
+  background-color: purple;
+  /* width: 100%; */
   display: flex;
-  flex-direction: column;
+  /* position: absolute; */
+ /* left: 30%; */
+  /* height: 1122.24px ;   */
+  
+   /* overflow: scroll; */
+/* top :20%; */
+} 
+
+.LeftSide{
+  width: 100%;
+  height:1122.24px ;  
+
+  background-color: red;
 }
 
+.RightSide{
+  width: 100%;
+  height: 1122.24px ;  
+ 
+background-color: black;
+}
 
 .description
 {
 width: 65%;
-
+  
+margin: 0;
+padding: 0;
 background-color: black;
   /* background-color: #ffffff; */
 }
