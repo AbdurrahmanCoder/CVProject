@@ -3,10 +3,11 @@
     margin: 0;
 }
 
+ 
 main{
-    display: flex;
-    background-color: #18a311;
-  }
+  display: flex;
+  justify-content: center;
+}
 
 
 ul{
@@ -31,6 +32,7 @@ flex-basis: 28%   ;
 background-color: #113adb;
 height: 100vh;
 display: flex;
+left: 0;
 position: fixed;
 }
 .first > div{
@@ -106,24 +108,20 @@ label{
   background-color: purple;
   /* width: 100%; */
   display: flex;
-  /* position: absolute; */
- /* left: 30%; */
-  /* height: 1122.24px ;   */
-  
-   /* overflow: scroll; */
-/* top :20%; */
+ 
 } 
 
+
 .LeftSide{
-  width: 100%;
-  height:1122.24px ;  
+  width: 40%;
+  /* height:1100.24px ;   */
 
   background-color: red;
 }
 
 .RightSide{
-  width: 100%;
-  height: 1122.24px ;  
+  width: 60%;
+  /* height: 1100.24px ;   */
  
 background-color: black;
 }

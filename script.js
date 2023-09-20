@@ -173,12 +173,12 @@ if (storedImageUrl) {
 
 // image change ends here
 // function downloads(){  
-//   var Hero = document.getElementsByClassName("Hero"); 
+//   var Hero = document.getElementsByClassName("CvContainer"); 
 //   if (Hero.length > 0) {
 //    var Hero = Hero[0];
 //    var printWindow = window.open('', '', 'height=1500,width=800');
 //    printWindow.document.write('<html class"rmBorder"><head><title>Print</title></head><body style="outline:"none">');
-//    printWindow.document.write(`<img id="imaDoad" src='${sourceImg}' />`);  
+//   //  printWindow.document.write(`<img id="imaDoad" src='${sourceImg}' />`);  
 //    printWindow.document.write(Hero.innerText);
 //    printWindow.document.write('</body></html>');
 //    printWindow.document.close();
@@ -190,7 +190,7 @@ if (storedImageUrl) {
 
   var contentDiv = document.getElementById("CvContainer");
 
-//starts here
+// //starts here
   
 var resumeOptions = {
   // PDF file settings
@@ -224,16 +224,16 @@ var resumeOptions = {
   }
 };
 
-//ends here
+// //ends here
 
-  // var opt = {
-  //   marginTop:       0,
+//   // var opt = {
+//   //   marginTop:       0,
 
-  //   filename:     'thisis.pdf',
-  //   image:        { type: 'jpeg', quality: 0.98 },
-  //   // html2canvas:  { scale: 2 },
-  //   jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-  // };
+//   //   filename:     'thisis.pdf',
+//   //   image:        { type: 'jpeg', quality: 0.98 },
+//   //   // html2canvas:  { scale: 2 },
+//   //   jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+//   // };
    
 
 html2pdf().set(resumeOptions).from(contentDiv).save()
