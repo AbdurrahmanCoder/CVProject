@@ -1,6 +1,6 @@
   *{
-    padding: 0;
-    margin: 0;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
  
@@ -45,8 +45,8 @@ position: fixed;
 {
   width: 600px;
   height: 700px;
-  overflow-y: scroll;
-  scale: 0.8;
+  /* overflow-y: scroll;
+  scale: 0.8; */
 
 }
 
@@ -99,39 +99,63 @@ label{
   font-size: 10px;
   color: #ffff;
 }
+/* 
 
+@page {
+  margin: 0;
+} */
 
+#section2{
+margin-top: 3%;
+  width: 40%;
+  /* scale: 0.8; */
+}
 
- 
 #CvContainer
 {
   background-color: purple;
-  /* width: 100%; */
+  width: 100%;
   display: flex;
- 
+    height: 1124px ;
+    /* scale: 0.7; */
+    /* margin: 0; */
+  /* padding: 0; */
+  flex-direction: row;
 } 
 
 
-.LeftSide{
-  width: 40%;
-  /* height:1100.24px ;   */
 
+
+.LeftSide{
+  padding-left: 5% !important;
+  width: 25%;
+  /* height:1100.24px ;   */ 
   background-color: red;
 }
 
 .RightSide{
-  width: 60%;
-  /* height: 1100.24px ;   */
+  width: 75%;
+  /* height: 1124.24px ;   */
  
 background-color: black;
 }
 
+.LeftSide > div > label {
+margin-top: 20px  !important; 
+}
+.LeftSide div {
+  display: flex;
+  /* gap: 1px; */
+flex-direction: column;
+}
+
+
 .description
 {
-width: 65%;
-  
+/* width: 65%; */
+/*   
 margin: 0;
-padding: 0;
+padding: 0; */
 background-color: black;
   /* background-color: #ffffff; */
 }
