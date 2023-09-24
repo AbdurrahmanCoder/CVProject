@@ -127,7 +127,7 @@ reader.readAsDataURL(file);
 } 
   else 
 {
-    alert("Please select an image to upload.");
+   console.log("Please select an image to upload.");
 }
 });
 
@@ -199,7 +199,7 @@ var resumeOptions = {
 
   // Page settings
   jsPDF: {
-    unit: 'mm',
+    unit: 'px',
     format: 'a4',
     orientation: 'portrait',
     marginLeft: 0,
