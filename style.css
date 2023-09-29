@@ -79,11 +79,11 @@ height: 20px;
 }
 
 h4{
-  font-size: 7px;
+  font-size: 17px;
   color: #ffff;
   width: 100%;
   line-height: 1.7;
-  /* padding-top: 4px !important; */
+  padding-top: 10px !important;
   
 }
 h4.underlined {
@@ -119,7 +119,8 @@ padding-top: 3%;
 {
   background-color: purple;
   width: 100%;
-  display: flex; 
+  display: flex;
+  
   height: 700px;
   flex-direction: row;
   /* overflow: ; */
@@ -127,14 +128,14 @@ padding-top: 3%;
 } 
 
 .LeftSide{
-  padding-left: 5% !important;
-  width: 15%;
+  padding-left: 2% !important;
+  width: 130px;
   /* height: 1122px ;  */
   background-color: #323B4C;
 }
 
 .RightSide{
-  width: 85%;
+  width: 800px; 
   /* height: 1124.24px ;   */
   /* height: 1122px ;  */
  
@@ -150,6 +151,11 @@ margin-top: 15px  !important;
 flex-direction: column;
 }
  
+#image-container > img {
+
+  width: 90px;
+  height: 150px;
+}
 #image-container{
   /* width: 200px; */
   /* height: 150px; */
@@ -175,12 +181,7 @@ background-color: black;
     background-color: #ccc;
   }
   
-  #image-container > img
-{
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-}
+ 
 /* 
 #imaDoad
 {
@@ -211,11 +212,8 @@ margin-top: 15px !important;
   
 
 
-
-
-
-
-
-
-
+.Education > div{
+  padding-top: 10px !important;
+}
+ 
 
